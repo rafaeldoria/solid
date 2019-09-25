@@ -4,8 +4,9 @@ namespace RD\Solid;
 
 class Html
 {
-    public function img(string $src = null)
+    public function __call(string $name, array $arguments)
     {
-        return '<img src="'.$src.'">';
+        $class = '\RD\Solid\Tag\\'. ucfirst($name);
+        return call_user_func_array([new $class, 'render'], $arguments);
     }
 }
