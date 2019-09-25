@@ -1,0 +1,18 @@
+{
+    "description": "",
+    "name": "rafaeldoria/solid",
+    "authors": [
+        {
+            "name": "Rafael Dória",
+            "email": "ieieldoria@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RD\\Solid\\": "src"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^7.1"
+    }
+}
